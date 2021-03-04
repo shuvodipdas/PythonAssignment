@@ -1,0 +1,19 @@
+#twin prime
+
+
+
+def prime(y):
+    f = 0
+    for x in range (2, y //2 + 1):
+        if y % x == 0 :
+           f = 1
+           break
+    return f
+    
+no1 = int(input(" Enter starting range:  "))
+no2 = int(input(" Enter ending range:  "))
+print("twin prime numbers are:  ")
+
+for x in range (no1, no2 + 1):
+    if prime(x) == 0 and prime(x+2) == 0:
+        print (x,'and', x+2)

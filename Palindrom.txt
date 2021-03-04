@@ -1,0 +1,16 @@
+#palindrom
+
+
+
+def check(x):
+    rev = x [::-1]
+    if x == rev:
+        return True
+    else:
+        return False
+        
+d = input("Enter any number:  ")
+if check(d):
+    print(" The number is palindrom")
+else:
+    print(" The number is not palindrom")
